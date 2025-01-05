@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="heading">
+        <h2>Pasword Generator</h2>
+      </div>
+
+      <div class="passInput">
+        <div id="pass">
+          <input id="random_pass" readonly />
+          <div>
+            <abbr title="Copy" id="copyTitle"
+              ><i class="fa-solid fa-copy" id="copy_btn"></i
+              ><i class="fa-solid fa-clipboard-check" id="copiedBtn"></i
+            ></abbr>
+          </div>
+        </div>
+      </div>
+
+      <div class="setPasswordType">
+        <div class="type">
+          <span>Password Length</span>
+          <input type="range" value="5" id="progress" />
+          <span id="progressValueCount">5</span>
+        </div>
+
+        <div class="type setCharUpppercase">
+          <span>Uppercase</span>
+          <div class="check-main">
+            <input type="checkbox" id="check" checked />
+            <label for="check" class="button"></label>
+          </div>
+        </div>
+
+        <div class="type setCharLowercase">
+          <span>Lowercase</span>
+          <div class="check-main">
+            <input type="checkbox" id="check2" checked />
+            <label for="check2" class="button"></label>
+          </div>
+        </div>
+        <div class="type setCharNumber">
+          <span>Numbers</span>
+          <div class="check-main">
+            <input type="checkbox" id="check3" checked />
+            <label for="check3" class="button"></label>
+          </div>
+        </div>
+        <div class="type setCharSymbol">
+          <span>Symbols</span>
+          <div class="check-main">
+            <input type="checkbox" id="check4" checked />
+            <label for="check4" class="button"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-main">
+        <button id="generate_btn">Generate</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

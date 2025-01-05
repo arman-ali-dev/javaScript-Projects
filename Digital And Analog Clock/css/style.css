@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #36656c;
+}
+
+.clock-main .clock {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-main .clock::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  border: #fff 3px solid;
+  z-index: 99;
+}
+
+.clock-main .clock span {
+  position: absolute;
+  inset: 20px;
+  text-align: center;
+  color: #131313;
+  transform: rotate(calc(30deg * var(--i)));
+}
+
+.clock span b {
+  font-size: 2em;
+  opacity: 0.6;
+  font-weight: 600;
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--i)));
+}
+
+.circle {
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.circle i {
+  width: 6px;
+  height: 50%;
+  background-color: #d9cfcf;
+  position: absolute;
+  opacity: 0.75;
+  transform: scaleY(0.5);
+  transform-origin: bottom;
+  margin-top: -6px !important;
+}
+
+.circle:nth-child(1) i {
+  width: 2px !important;
+}
+
+.circle:nth-child(2) i {
+  width: 6px;
+}
+
+.circle:nth-child(3) i {
+  width: 2px;
+}
+
+.circle2 {
+  width: 240px;
+  height: 240px;
+  z-index: 9;
+}
+
+.circle3 {
+  width: 180px;
+  height: 180px;
+  z-index: 8;
+}
+
+.digital-clock {
+  width: 295px;
+  margin: 20px 0 40px;
+  display: flex;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 600;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+}
+
+.digital-clock span {
+  width: 60px;
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  color: #131313;
+}
+
+.digital-clock span:nth-child(1)::after,
+.digital-clock span:nth-child(2)::after {
+  content: ":";
+  right: -4px;
+  top: -2px;
+  position: absolute;
+}
+
+.digital-clock span:last-child {
+  font-size: 0.5em;
+  color: #d9cfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digital-clock span:nth-child(2)::after {
+  animation: animate 1s steps(1) infinite;
+}
+
+.digital-clock-main {
+  height: 130px;
+  background-color: #36656c;
+  box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

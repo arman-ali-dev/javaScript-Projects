@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Tilt+Neon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(60deg, #466c7b, #33415f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  border: 1px solid #717377;
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(60deg, #466c7b, #33415f);
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+#main-input {
+  width: 320px;
+  border: none;
+  padding: 24px;
+  margin: 10px;
+  background: transparent;
+  font-size: 50px;
+  text-align: right;
+  cursor: pointer;
+  color: #fff;
+  outline: 0;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+button {
+  border: 0;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: -8px -8px 15px rgba(4, 3, 3, 0.1);
+}
+
+.operator {
+  color: #adff60;
+}
+
+#equals {
+  background-color: #adff60;
+  color: #000;
+}

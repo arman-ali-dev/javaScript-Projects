@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hit The Mouse - Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="game">
+      <div class="heading">
+        <h2>Hit The Mouse</h2>
+      </div>
+
+      <div class="score">
+        <span>Score: <span id="point">0</span></span>
+      </div>
+
+      <div class="holes">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+
+      <div class="btn_group">
+        <button class="startStopBtn" id="start_btn">Start</button>
+        <button class="startStopBtn" id="stop_btn">Stop</button>
+      </div>
+
+      <div class="hammer_main">
+        <div id="hammer">
+          <i class="fa-sharp fa-solid fa-gavel" id="rotation"></i>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

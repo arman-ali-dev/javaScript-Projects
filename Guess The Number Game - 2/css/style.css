@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Tilt+Neon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body {
+  background: linear-gradient(45deg, #7e6cfc, #b537f0);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 550px;
+  width: 93%;
+  margin: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 6px #dacece;
+  padding: 50px 15px;
+  text-align: center;
+  border: 1px solid #cecdcd;
+}
+
+.game .box h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.game .box p {
+  margin-top: 10px;
+  color: rgb(114, 2, 2);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.game .box h4 {
+  margin-top: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.game .box input {
+  width: 100%;
+  margin-top: 18px;
+  border: none;
+  outline: 0;
+  height: 40px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 4px;
+}
+
+.game .box button {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #e27508;
+  border: none;
+  width: 48%;
+  height: 45px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.game .box span {
+  margin-top: 15px;
+  display: inline-block;
+  color: rgb(8 175 8);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.game #highestScore {
+  font-size: 16px;
+  color: rgb(255 0 0);
+}
+
+#score {
+  color: rgb(255 0 0);
+}
+
+@media (min-width: 768px) {
+  .game .box h3 {
+    font-size: 22px;
+  }
+  .game .box p {
+    font-size: 18px;
+  }
+  .game .box h4 {
+    font-size: 20px;
+  }
+
+  .game .box input {
+    width: 80%;
+  }
+
+  .box {
+    width: 450px;
+    margin: 0;
+    padding: 50px 20px;
+  }
+  .game .box button {
+    font-size: 17px;
+    width: 38%;
+  }
+
+  .game .box span {
+    font-size: 18px;
+  }
+
+  .game #highestScore {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

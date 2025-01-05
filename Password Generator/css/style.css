@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: #131218;
+}
+
+.card {
+  padding: 30px 20px;
+  box-shadow: 0px 0px 10px 3px #000;
+  width: 600px;
+  border-radius: 14px;
+  margin: 100px auto 0;
+}
+
+.card .heading {
+  text-align: center;
+}
+
+.card .heading h2 {
+  font-size: 23px;
+  color: #58adc1;
+}
+
+.passInput {
+  margin-top: 22px;
+}
+#pass {
+  display: flex;
+  justify-content: space-between;
+}
+.passInput #pass {
+  background-color: rgb(9 8 10 / 60%);
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 25px;
+  line-height: 47px;
+  height: 50px;
+  color: #fff;
+  font-size: 19px;
+}
+
+.type {
+  background-color: rgba(61, 60, 61, 0.6);
+  padding: 0 25px;
+  width: 100%;
+  line-height: 43px;
+  height: 45px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #58adc1;
+}
+
+.type #progress {
+  -webkit-appearance: none;
+  background-color: #faeded;
+  height: 17px;
+  width: 46%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.type #progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 17px;
+  width: 17px;
+  background-color: #131218;
+  border-radius: 50%;
+  box-shadow: -406px 0 0 400px #58adc1;
+  cursor: pointer;
+}
+
+.type #progressValueCount {
+  background-color: #58adc1;
+  height: 27px;
+  width: 30px;
+  line-height: 27px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.check-main {
+  line-height: 0px;
+}
+
+.button {
+  background-color: #131218;
+  height: 28px;
+  width: 50px;
+  display: inline-block;
+  border-radius: 200px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0px 0px 10px 1px #131218;
+}
+
+#check,
+#check2,
+#check3,
+#check4 {
+  display: none;
+}
+
+#check:checked + .button,
+#check2:checked + .button,
+#check3:checked + .button,
+#check4:checked + .button {
+  background-color: #58adc1;
+  box-shadow: 0px 0px 10px 1px #58adc1;
+}
+
+.button::before {
+  content: "OFF";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  font-size: 11px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 1.4px;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+#check:checked + .button::before,
+#check2:checked + .button::before,
+#check3:checked + .button::before,
+#check4:checked + .button::before {
+  transform: translateX(22.5px);
+  content: "ON";
+  font-size: 11px;
+}
+
+#copy_btn {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-main #generate_btn {
+  font-size: 17px;
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: #131218;
+  border: none;
+  outline: none;
+  padding: 14px 30px;
+  margin: 30px auto 0;
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px #000;
+  font-weight: 600;
+}
+
+#copiedBtn {
+  display: none;
+  cursor: pointer;
+}
+
+#random_pass {
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

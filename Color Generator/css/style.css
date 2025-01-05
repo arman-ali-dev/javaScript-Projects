@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.box {
+  height: 220px;
+  width: 500px;
+  display: block;
+  border-radius: 5px;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+.main {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 50px 100px;
+}
+
+#generateBtn,
+#copyBtn {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 11px 28px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15.5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.bottom-row {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-top: none !important;
+  padding: 10px 16px;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  margin: 0 0 10px 3px;
+  font-size: 20px;
+}
+
+.randomCodeBox {
+  background-color: rgb(235, 232, 232);
+  height: 40px;
+  width: 100px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
+  resize: unset;
+  outline: none;
+  cursor: default;
+}
+
+#copyBtn {
+  padding: 0 !important;
+  height: 40px;
+  width: 40px;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  margin-left: -5px;
+}
+
+button {
+  border: none !important;
+}
+
+#copied {
+  display: none;
+}

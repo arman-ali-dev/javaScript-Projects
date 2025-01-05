@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  </head>
+
+  <body>
+    <div class="music-player">
+      <div class="play-content">
+        <button class="btn" id="left-button">
+          <img src="images/left-arrow.svg" alt="" />
+        </button>
+        <p class="play-heading">PLAYING NOW</p>
+        <button class="btn" id="left-button">
+          <img src="images/manu.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="music-images">
+        <img
+          src="images/first.jpg"
+          alt=""
+          class="music-image-1"
+          id="songImage"
+        />
+      </div>
+
+      <div class="music-about">
+        <h3 class="music-name" id="songName">Low Life</h3>
+        <p class="music-content" id="songContent">Future ft. The Weeknd</p>
+      </div>
+      <div class="musics-audio">
+        <audio controls class="audio" id="audio-1">
+          <source src="musics/first.mp3" />
+        </audio>
+      </div>
+      <div class="progress-bar">
+        <div class="music-duration">
+          <span class="duration" id="currentTime">0:00</span>
+          <span class="duration" id="durationTime">0:00</span>
+        </div>
+        <div class="slider-main">
+          <div id="inner-slider-bar">
+            <input type="range" id="progress" value="0" />
+          </div>
+        </div>
+
+        <div class="music-controls">
+          <div class="big">
+            <button class="prev-next-btn" id="back-song">
+              <img class="back-song-img" src="images/download.svg" alt="" />
+            </button>
+          </div>
+          <div class="play-big">
+            <button id="play-btn">
+              <img height="15px" id="play" src="images/play.svg" alt="" /><i
+                class="fa-solid fa-pause"
+                id="pause"
+              ></i>
+            </button>
+          </div>
+
+          <div class="big">
+            <button class="prev-next-btn" id="next-song">
+              <img style="height: 15px" src="images/download.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

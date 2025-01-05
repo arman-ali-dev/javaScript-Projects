@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="home-section">
+        <div class="container">
+            <div>
+                <div class="openAccountHead mx-auto">
+                    <h2 class="openAccount" id="nameHeading"></h2>
+                </div>
+                <div class="openDateMain  mx-auto">
+                    <h2 class="mb-0 openDate">We are Open 7 days of the week <span class="time">9:00 AM TO 8:00
+                            PM</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="type text-center mb-5 mb-lg-0" id="transfer">
+                        <a href="/transfer.html" target="_blank">
+                            <img id="image" src="images/bank-transfer.png" alt="">
+                            <h2>Transfer</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="type text-center mb-5 mb-lg-0" id="deposit">
+                        <a href="/deposit.html" target="_blank">
+                            <img id="image" src="images/wallet.png" alt="">
+                            <h2>Deposit</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="type text-center mb-5 mb-lg-0" id="withdraw">
+                        <a href="/withdraw.html" target="_blank">
+                            <img id="image" src="images/withdraw.png" alt="">
+                            <h2>Withdraw</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="type text-center" id="pinChange">
+                        <a href="/pinChange.html" target="_blank">
+                            <img id="image" src="images/refresh.png" alt="">
+                            <h2>Pin Change</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <script>
+        const nameHeading = document.getElementById("nameHeading")
+        let user = JSON.parse(localStorage.getItem("Current User"));
+        nameHeading.textContent = `Welcome ${user} To Our Bank`;
+    </script>
+</body>
+
+</html>

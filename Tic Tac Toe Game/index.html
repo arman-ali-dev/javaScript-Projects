@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe - Play Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" href="img/icon-16.png" />
+  </head>
+
+  <body onload="reloadMessage()">
+    <div id="entryMessage">
+      <span class="message-text"
+        >Whoever Wins The First 3 Rounds Is The Final Winner.</span
+      >
+      <div class="btn-grp">
+        <a href="#" id="agreeBtn">Okay</a>
+      </div>
+    </div>
+    <div class="round-parent">
+      <h3 id="roundDisplay" class="text-white text-center">
+        Round - <span id="rounds">1</span>
+      </h3>
+    </div>
+    <section>
+      <div class="container-fluid">
+        <audio controls id="clickSound" class="d-none">
+          <source src="sound/click sound.mp3" />
+        </audio>
+        <audio controls id="winSound" class="d-none">
+          <source src="sound/win sound.mp4" />
+        </audio>
+        <audio controls id="lossSound" class="d-none">
+          <source src="sound/buzzer-4-183895.mp3" />
+        </audio>
+        <audio controls id="nextRoundSound" class="d-none">
+          <source src="sound/swoosh.mp4" />
+        </audio>
+        <audio controls id="finalWinnerSound" class="d-none">
+          <source src="sound/final winner-bell.mp3" />
+        </audio>
+        <div id="message">
+          <h2>
+            Player (<span id="playerSymbolName"></span>) is the winner! Wait 10
+            seconds, the game will start again.
+          </h2>
+
+          <span class="text-white" id="countDown">10</span>
+        </div>
+        <div class="d-lg-flex mt-5" style="gap: 110px">
+          <ul
+            class="winning-parent d-flex justify-content-center mx-3 mr-md-0 ml-lg-5 mt-4 mb-5 mb-lg-0"
+          >
+            <li class="text-white" id="player-x">
+              PLAYER <sup>1</sup> ( X )
+              <span class="d-block text-center" id="playerXWinning">0</span>
+            </li>
+            <li class="text-white" id="player-o">
+              PLAYER <sup>2</sup> ( O )
+              <span class="d-block text-center" id="playerOWinning">0</span>
+            </li>
+            <li class="text-white">
+              TIE <span class="d-block text-center" id="tie">0</span>
+            </li>
+          </ul>
+          <div
+            class="game-box d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center"
+          >
+            <button type="button" class="ttt-btn join">
+              <span class="btn-text"></span>
+            </button>
+            <button type="button" class="ttt-btn join">
+              <span class="btn-text"></span>
+            </button>
+            <button type="button" class="ttt-btn border-right-0">
+              <span class="btn-text"></span>
+            </button>
+            <button type="button" class="ttt-btn">
+              <span class="btn-text"></span>
+            </button>
+            <button type="button" class="ttt-btn">
+              <span class="btn-text"></span>
+            </button>
+            <button type="button" class="ttt-btn border-right-0">
+              <span class="btn-text"></span>
+            </button>
+            <button type="button" class="ttt-btn border-bottom-0">
+              <span class="btn-text"></span>
+            </button>
+            <button type="button" class="ttt-btn border-bottom-0">
+              <span class="btn-text"></span>
+            </button>
+            <button
+              type="button"
+              class="ttt-btn border-bottom-0 border-right-0"
+            >
+              <span class="btn-text"></span>
+            </button>
+          </div>
+
+          <button
+            id="restart"
+            onclick="restartGame()"
+            class="text-white bg-transparent d-inline-block"
+          >
+            Restart
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

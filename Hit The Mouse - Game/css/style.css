@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+  cursor: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background-color: #36730a;
+}
+
+.game {
+  text-align: center;
+}
+
+.heading {
+  margin-top: 55px;
+}
+
+.heading h2 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.score span {
+  color: #fff;
+  font-size: 23px;
+}
+
+.score {
+  margin-top: 25px;
+}
+
+.holes {
+  height: 400px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.holes .hole {
+  width: 33.33%;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.holes .hole::after {
+  background-image: url(../media/hole.png);
+  height: 100px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btn_group {
+  margin-top: 50px;
+}
+
+.btn_group .startStopBtn {
+  color: #fff;
+  font-size: 18px;
+  border: 2px solid #fff;
+  padding: 7px 30px;
+  border-radius: 4px;
+  outline: none;
+  display: inline-block;
+  background-color: transparent;
+}
+
+.btn_group #stop_btn {
+  display: none;
+}
+
+.hammer_main #hammer {
+  transform: translate(-20px, -50px);
+  position: absolute;
+  animation: hitting_effect 0.1s ease;
+  font-size: 95px;
+  pointer-events: none;
+}
+
+.hammer_main #rotation {
+  transform: rotate(275deg);
+}
+
+@keyframes hitting_effect {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-40deg);
+  }
+}
+
+.rat {
+  animation: move 0.5s linear;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 55px;
+}
+
+@keyframes move {
+  from {
+    bottom: -60px;
+  }
+
+  to {
+    bottom: 0;
+  }
+}

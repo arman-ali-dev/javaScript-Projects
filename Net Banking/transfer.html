@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+
+            <div class="verificationBox mx-auto">
+                <div class="heading  text-center">
+                    <h2 class="span1">Transfer</h2>
+                </div>
+
+                <form class="verification-details">
+
+                    <div>
+                        <label class="label">Enter receiver account number</label>
+                        <input type="text" class="details" id="enteredAcoountNumber">
+                        <span class="d-block error" id="accountError"></span>
+
+                    </div>
+                    <div>
+                        <label class="label">Enter your pin</label>
+                        <input type="number" class="details" id="enteredPin">
+                        <span class="d-block error" id="pinError"></span>
+
+                    </div>
+
+
+                    <div>
+                        <label class="label">Enter amount</label>
+                        <input type="text" class="details" id="enteredAmount">
+                        <span class="d-block error" id="amountError"></span>
+                    </div>
+
+                    <button class="margin-set" id="transferBtn">Transfer</button>
+
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div class="pop-up">
+        <div class="img-main">
+            <img src="images/checked.png" alt="">
+        </div>
+        <h2>Thank You!</h2>
+        <p>Your transfer has been successfully.</p>
+        <a href="/home.html" id="okayBtn" target="_blank">Okay</a>
+    </div>
+    </div>
+
+    <script src="js/transfer.js"></script>
+</body>
+
+</html>

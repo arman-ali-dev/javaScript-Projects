@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(60deg, #466c7b, #33415f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.age-calculator {
+  width: 570px;
+  height: 300px;
+  padding: 50px 40px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  background-color: #f0efef;
+  height: 40px;
+  width: 33.33%;
+  display: block;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #466c7b;
+  font-size: 17px;
+  display: block;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  height: 40px;
+  cursor: pointer;
+  width: 30%;
+  margin: 30px auto 0;
+}
+
+#error {
+  text-align: center;
+  display: block;
+  color: red;
+  margin-bottom: 10px;
+  height: 20px;
+}

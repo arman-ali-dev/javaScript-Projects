@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <div class="details login">
+      <div class="verificationBox mx-auto">
+        <div class="heading heading2">
+          <h3 class="text-center m-0 span1">Login</h3>
+        </div>
+
+        <form class="verification-details detail-form">
+          <div>
+            <label class="label">Enter Account Holder's Name</label>
+            <input class="details" type="text" id="enteredAccountHolderName" />
+            <span class="error d-block" id="accountHolderNameError"></span>
+          </div>
+          <div>
+            <label class="label">Enter Account Number</label>
+            <input class="details" type="number" id="enteredAccountNumber" />
+            <span class="error d-block" id="accountNumberError"></span>
+          </div>
+
+          <div>
+            <label class="label">Enter Pin</label>
+            <input class="details" type="number" id="enteredPin" />
+            <span class="error d-block" id="pinError"></span>
+          </div>
+          <button class="margin-set" id="loginBtn">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

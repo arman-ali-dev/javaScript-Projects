@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #ff2963;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textToVoice {
+  text-align: center;
+  width: 600px;
+}
+
+#enteredText {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 600px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  resize: unset;
+  height: 250px;
+  padding: 20px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: #000;
+}
+
+#enteredText::placeholder {
+  font-size: 16px;
+  color: #000;
+}
+
+#listenBtn {
+  padding: 12.5px 32px;
+  background-color: #000;
+  font-size: 16px;
+  color: #fff;
+  border-bottom-right-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-left: 2px solid #fff;
+}
+
+.row {
+  display: flex;
+  margin-top: -5px;
+}
+
+select {
+  width: 1%;
+  background-color: #000;
+  flex: 1;
+  color: #fff;
+  height: 45px;
+  padding: 0 20px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  display: block;
+}
+
+.chevron {
+  position: absolute;
+  color: #fff;
+  right: 18px;
+  font-size: 14px;
+}
+
+.select_main {
+  display: flex;
+  flex: 1;
+  position: relative;
+  align-items: center;
+}
